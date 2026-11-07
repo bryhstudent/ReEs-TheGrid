@@ -7,13 +7,35 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    collectableitems.cpp \
+    commonhunter.cpp \
+    elitehunter.cpp \
+    frag.cpp \
+    gamemanager.cpp \
     gameobject.cpp \
+    gameobject.cpp \
+    hunter.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    movableobject.cpp \
+    pem.cpp \
+    player.cpp
 
 HEADERS += \
+    collectableitems.h \
+    commonhunter.h \
+    elitehunter.h \
+    frag.h \
+    gamemanager.h \
     gameobject.h \
-    mainwindow.h
+    gameobject.h \
+    hunter.h \
+    idamageable.h \
+    iscorable.h \
+    mainwindow.h \
+    movableobject.h \
+    pem.h \
+    player.h
 
 FORMS += \
     mainwindow.ui
