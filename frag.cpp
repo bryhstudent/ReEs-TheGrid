@@ -8,6 +8,9 @@ Frag::Frag(float posx, float posy)
 }
 
 void Frag::collectItem(IScorable& target) {
+    if (isCollected) return;
     target.addScore(this->value);
     this->isCollected = true;
 }
+
+int Frag::getPointValue() const { return value; }

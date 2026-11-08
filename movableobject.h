@@ -3,8 +3,6 @@
 
 #include "gameobject.h"
 
-using namespace std;
-
 class MovableObject : public GameObject {
 protected:
     float velocity;

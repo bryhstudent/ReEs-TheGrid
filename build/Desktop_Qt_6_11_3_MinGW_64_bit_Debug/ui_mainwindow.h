@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
@@ -22,6 +23,8 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QLabel *player;
+    QLabel *CoordinatesLabel;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -32,6 +35,14 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        player = new QLabel(centralwidget);
+        player->setObjectName("player");
+        player->setGeometry(QRect(40, 50, 41, 61));
+        player->setPixmap(QPixmap(QString::fromUtf8(":/images/jake_player.png")));
+        player->setScaledContents(true);
+        CoordinatesLabel = new QLabel(centralwidget);
+        CoordinatesLabel->setObjectName("CoordinatesLabel");
+        CoordinatesLabel->setGeometry(QRect(110, 10, 37, 12));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -48,6 +59,8 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        player->setText(QString());
+        CoordinatesLabel->setText(QCoreApplication::translate("MainWindow", "Xd buena", nullptr));
     } // retranslateUi
 
 };

@@ -5,8 +5,6 @@
 #include "idamageable.h"
 #include "iscorable.h"
 
-using namespace std;
-
 class Player : public MovableObject, public IDamageable, public IScorable {
 private:
     int remainingLifes;

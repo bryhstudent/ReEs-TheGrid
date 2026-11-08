@@ -13,7 +13,6 @@ SOURCES += \
     frag.cpp \
     gamemanager.cpp \
     gameobject.cpp \
-    gameobject.cpp \
     hunter.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -27,7 +26,6 @@ HEADERS += \
     elitehunter.h \
     frag.h \
     gamemanager.h \
-    gameobject.h \
     gameobject.h \
     hunter.h \
     idamageable.h \
@@ -44,3 +42,7 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resources.qrc
+

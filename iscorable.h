@@ -1,8 +1,6 @@
 #ifndef ISCORABLE_H
 #define ISCORABLE_H
 
-using namespace std;
-
 class IScorable {
 public:
     virtual void addScore(int amount) = 0;

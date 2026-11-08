@@ -4,7 +4,7 @@ using namespace std;
 
 EliteHunter::EliteHunter(float posx, float posy, float velocity)
     : Hunter(posx, posy, velocity) {
-    this->visionRadius = 4.0f;
+    this->visionRadius = 2.0f;
 }
 
 float EliteHunter::getVisionRadius() const {

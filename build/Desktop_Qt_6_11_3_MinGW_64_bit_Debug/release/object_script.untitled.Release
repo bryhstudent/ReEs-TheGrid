@@ -1,0 +1,14 @@
+release/collectableitems.o
+release/commonhunter.o
+release/elitehunter.o
+release/frag.o
+release/gamemanager.o
+release/gameobject.o
+release/hunter.o
+release/main.o
+release/mainwindow.o
+release/movableobject.o
+release/pem.o
+release/player.o
+release/qrc_resources.o
+release/moc_mainwindow.o

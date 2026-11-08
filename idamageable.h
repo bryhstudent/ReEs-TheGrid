@@ -1,8 +1,6 @@
 #ifndef IDAMAGEABLE_H
 #define IDAMAGEABLE_H
 
-using namespace std;
-
 class IDamageable {
 public:
     virtual void takeDamage(int amount) = 0;

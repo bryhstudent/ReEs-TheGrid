@@ -3,8 +3,6 @@
 
 #include "collectableitems.h"
 
-using namespace std;
-
 class Frag : public CollectableItems {
 private:
     int value;
@@ -12,6 +10,7 @@ private:
 public:
     Frag(float posx = 0.0f, float posy = 0.0f);
     void collectItem(IScorable& target) override;
+    int getPointValue() const override;
 };
 
 #endif // FRAG_H

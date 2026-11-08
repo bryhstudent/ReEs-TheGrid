@@ -3,8 +3,6 @@
 
 #include "hunter.h"
 
-using namespace std;
-
 class EliteHunter : public Hunter {
 private:
     float visionRadius;

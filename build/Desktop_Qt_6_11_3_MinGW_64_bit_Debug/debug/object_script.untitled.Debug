@@ -1,0 +1,14 @@
+debug/collectableitems.o
+debug/commonhunter.o
+debug/elitehunter.o
+debug/frag.o
+debug/gamemanager.o
+debug/gameobject.o
+debug/hunter.o
+debug/main.o
+debug/mainwindow.o
+debug/movableobject.o
+debug/pem.o
+debug/player.o
+debug/qrc_resources.o
+debug/moc_mainwindow.o
